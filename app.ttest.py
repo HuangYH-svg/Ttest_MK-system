@@ -1,5 +1,12 @@
 # -*- coding: utf-8 -*-
-
+"""
+環境監測綜合分析系統
+功能：
+1. 施工前 vs 施工期間差異檢定
+2. 異常偵測矩陣，格內顯示 p-value（小數後 3 位）
+3. Mann-Kendall 長期趨勢分析
+4. 支援 <、ND、N.D.、-、－ 等環境監測常見資料格式
+"""
 
 import io
 from typing import Any
