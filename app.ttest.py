@@ -448,8 +448,9 @@ def build_abnormal_matrix(res_df: pd.DataFrame) -> go.Figure:
             method_code = format_test_method_code(
                 row.get("test_method", "N/A")
             )
-            cell_text = (f"{pre_text} → {dur_text}"
-                         f"<br><i>p</i>={p_val:.3f}｜{method_code}"
+            cell_text = (f"{pre_text} → {dur_text} | "
+                         f"<i>p</i>={p_val:.3f}｜"
+                         f"{method_code}"
                         )
         elif status == "green":
             method_code = format_test_method_code(
